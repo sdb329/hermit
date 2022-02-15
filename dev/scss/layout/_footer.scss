@@ -1,0 +1,41 @@
+/* =============
+    Footer
+============= */
+footer{
+    background-color: transparent;
+    width: 100vw;
+    // padding: 0% 8%;
+
+    @include lg {
+        width: 50vw;
+    }
+
+    >div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 25px;
+
+        @include lg {
+            padding: 10px 35px;
+        }
+       
+        p{
+            color: white;
+        }
+        
+        div{
+            width: 30%;
+            height: 3px;
+            background-color: white;
+
+            @include md {
+                width: 35%;
+            }
+
+            @include lg {
+                width: 45%;
+            }
+        }
+    }
+}
