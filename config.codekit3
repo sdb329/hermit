@@ -21,14 +21,6 @@
       "oF" : 0,
       "pg" : 0
     },
-    "\/deploy\/footer.html" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/deploy\/footer.html",
-      "oF" : 0
-    },
     "\/deploy\/img\/the_royal_tenenbaums.jpeg" : {
       "ft" : 16384,
       "iS" : 248095,
@@ -74,13 +66,45 @@
       "sC" : 3,
       "tS" : 0
     },
-    "\/dev\/content\/content.kit" : {
+    "\/dev\/content\/end.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/content\/content.html",
-      "oF" : 0
+      "oAP" : "\/dev\/content\/end.html",
+      "oF" : 1
+    },
+    "\/dev\/content\/food.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/food.html",
+      "oF" : 1
+    },
+    "\/dev\/content\/intro.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/index.kit",
+      "oF" : 3
+    },
+    "\/dev\/content\/life.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/life.html",
+      "oF" : 1
+    },
+    "\/dev\/content\/shell.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/shell.html",
+      "oF" : 1
     },
     "\/dev\/global\/footer.kit" : {
       "cB" : 0,
@@ -88,7 +112,7 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/deploy\/footer.html",
-      "oF" : 2
+      "oF" : 3
     },
     "\/dev\/global\/head.kit" : {
       "cB" : 0,
@@ -96,7 +120,7 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/global\/head.html",
-      "oF" : 0
+      "oF" : 1
     },
     "\/dev\/global\/header.kit" : {
       "cB" : 0,
@@ -104,7 +128,7 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/global\/header.html",
-      "oF" : 0
+      "oF" : 1
     },
     "\/dev\/global\/scripts.kit" : {
       "cB" : 0,
@@ -112,7 +136,7 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/global\/scripts.html",
-      "oF" : 0
+      "oF" : 1
     },
     "\/dev\/index.kit" : {
       "cB" : 0,
