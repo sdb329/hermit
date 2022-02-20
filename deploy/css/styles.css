@@ -460,43 +460,20 @@ textarea {
     Footer
 ============= */
 /* =============
-    Preloader
+    Intro
 ============= */
-#preloader {
-  display: grid;
-  grid-template-columns: auto 90vw auto;
-  grid-template-areas: ". preloader .";
-  background-color: transparent;
-  position: absolute;
-  height: 100vh;
-  width: 100%;
-}
-@media (min-width: 768px) {
-  #preloader {
-    grid-template-columns: auto 80vw auto;
-  }
-}
-@media (min-width: 992px) {
-  #preloader {
-    grid-template-columns: auto 70vw auto;
-  }
-}
-@media (min-width: 1200px) {
-  #preloader {
-    grid-template-columns: auto 50vw auto;
-  }
-}
-#preloader > div {
-  grid-area: preloader;
-  height: 100%;
+#intro {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
-#preloader > div svg {
-  width: 100%;
-  height: 100%;
+#intro > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #F9D5AE;
 }
-#preloader > div svg #logo-4 {
-  visibility: hidden;
+#intro > div h1 {
+  text-align: center;
+  width: 100vw;
 }
