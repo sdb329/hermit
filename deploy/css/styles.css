@@ -10,7 +10,7 @@ html {
 /* =============
     Variables
 ============= */
-/*! normalize.css v8.0.0 | MIT License | github.com/necolas/normalize.css */
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
 /**
@@ -31,6 +31,13 @@ html {
  */
 body {
   margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
 }
 
 /**
@@ -346,28 +353,49 @@ template {
     Base
 ============= */
 figure {
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 ul {
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 ul li {
   list-style: none;
 }
 
+.container-grid {
+  display: grid;
+  grid-template-areas: ". grid-content .";
+  grid-template-columns: 15px auto 15px;
+  height: 100vh;
+}
+@media (min-width: 1200px) {
+  .container-grid {
+    grid-template-columns: auto 1200px auto;
+  }
+}
+.container-grid > div {
+  grid-area: grid-content;
+}
+
 /* =============
     Typography
 ============= */
-h1, h2, h3, h4, h5, p {
-  padding: 0;
+h1, h2, h3, h4 {
   margin: 0;
+  padding: 0;
 }
 
-a {
-  text-decoration: none;
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 6.25rem;
+  color: red;
 }
 
 /* =============
@@ -400,48 +428,44 @@ textarea {
 /* =============
     Footer
 ============= */
-footer {
+/* =============
+    Preloader
+============= */
+#preloader {
+  display: grid;
+  grid-template-columns: auto 90vw auto;
+  grid-template-areas: ". preloader .";
   background-color: transparent;
-  width: 100vw;
-}
-@media (min-width: 992px) {
-  footer {
-    width: 50vw;
-  }
-}
-footer > div {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 25px;
-}
-@media (min-width: 992px) {
-  footer > div {
-    padding: 10px 35px;
-  }
-}
-footer > div p {
-  color: white;
-}
-footer > div div {
-  width: 30%;
-  height: 3px;
-  background-color: white;
+  position: absolute;
+  height: 100vh;
+  width: 100%;
 }
 @media (min-width: 768px) {
-  footer > div div {
-    width: 35%;
+  #preloader {
+    grid-template-columns: auto 80vw auto;
   }
 }
 @media (min-width: 992px) {
-  footer > div div {
-    width: 45%;
+  #preloader {
+    grid-template-columns: auto 70vw auto;
   }
 }
-
-main h1 {
-  color: red;
+@media (min-width: 1200px) {
+  #preloader {
+    grid-template-columns: auto 50vw auto;
+  }
 }
-main h1 p {
-  color: blue;
+#preloader > div {
+  grid-area: preloader;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#preloader > div svg {
+  width: 100%;
+  height: 100%;
+}
+#preloader > div svg #logo-4 {
+  visibility: hidden;
 }

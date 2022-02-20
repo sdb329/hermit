@@ -21,32 +21,6 @@
       "oF" : 0,
       "pg" : 0
     },
-    "\/deploy\/img\/the_royal_tenenbaums.jpeg" : {
-      "ft" : 16384,
-      "iS" : 248095,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/deploy\/img\/the_royal_tenenbaums.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/deploy\/img\/the_royal_tenenbaums.jpg" : {
-      "ft" : 16384,
-      "iS" : 203588,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/deploy\/img\/the_royal_tenenbaums.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
     "\/deploy\/index.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -72,7 +46,7 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/content\/end.html",
-      "oF" : 1
+      "oF" : 0
     },
     "\/dev\/content\/food.kit" : {
       "cB" : 0,
@@ -80,15 +54,15 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/content\/food.html",
-      "oF" : 1
+      "oF" : 0
     },
     "\/dev\/content\/intro.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/index.kit",
-      "oF" : 3
+      "oAP" : "\/dev\/content\/intro.html",
+      "oF" : 0
     },
     "\/dev\/content\/life.kit" : {
       "cB" : 0,
@@ -96,7 +70,7 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/content\/life.html",
-      "oF" : 1
+      "oF" : 0
     },
     "\/dev\/content\/shell.kit" : {
       "cB" : 0,
@@ -104,15 +78,15 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/content\/shell.html",
-      "oF" : 1
+      "oF" : 0
     },
     "\/dev\/global\/footer.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/deploy\/footer.html",
-      "oF" : 3
+      "oAP" : "\/dev\/global\/footer.html",
+      "oF" : 0
     },
     "\/dev\/global\/head.kit" : {
       "cB" : 0,
@@ -120,7 +94,7 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/global\/head.html",
-      "oF" : 1
+      "oF" : 0
     },
     "\/dev\/global\/header.kit" : {
       "cB" : 0,
@@ -128,7 +102,7 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/global\/header.html",
-      "oF" : 1
+      "oF" : 0
     },
     "\/dev\/global\/scripts.kit" : {
       "cB" : 0,
@@ -136,7 +110,7 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/global\/scripts.html",
-      "oF" : 1
+      "oF" : 0
     },
     "\/dev\/index.kit" : {
       "cB" : 0,
@@ -147,7 +121,7 @@
       "oF" : 2
     },
     "\/dev\/js\/scripts.js" : {
-      "bF" : 4,
+      "bF" : 0,
       "ft" : 64,
       "ma" : 0,
       "mi" : 1,
@@ -307,7 +281,7 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/sections\/_content.scss" : {
+    "\/dev\/scss\/sections\/_preloader.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -316,7 +290,7 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/_content.css",
+      "oAP" : "\/dev\/scss\/sections\/_preloader.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -350,6 +324,39 @@
       "oA" : 2,
       "oAP" : "\/node_modules",
       "oF" : 0
+    },
+    "\/node_modules\/gsap\/CSSPlugin.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/node_modules\/gsap\/CSSPlugin-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/node_modules\/gsap\/gsap-core.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/node_modules\/gsap\/gsap-core-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/node_modules\/gsap\/index.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/node_modules\/gsap\/index-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
     },
     "\/package-lock.json" : {
       "ft" : 524288,
