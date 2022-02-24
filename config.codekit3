@@ -50,6 +50,16 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/design\/orange_wave.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/design\/orange_wave.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/design\/pink_wave.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -94,6 +104,14 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/content\/food.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/hero.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/hero.html",
       "oF" : 0
     },
     "\/dev\/content\/intro.kit" : {
@@ -321,7 +339,7 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/sections\/_preloader.scss" : {
+    "\/dev\/scss\/sections\/_intro.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -330,7 +348,7 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/scss\/sections\/_preloader.css",
+      "oAP" : "\/dev\/scss\/sections\/_intro.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,

@@ -462,18 +462,3 @@ textarea {
 /* =============
     Intro
 ============= */
-#intro {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#intro > div {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #F9D5AE;
-}
-#intro > div h1 {
-  text-align: center;
-  width: 100vw;
-}
