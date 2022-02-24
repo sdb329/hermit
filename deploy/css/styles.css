@@ -466,24 +466,59 @@ textarea {
   width: 100%;
   margin-bottom: -15px;
 }
-#intro .content {
+#intro .intro {
   background-color: #F9D5AE;
-  height: 80vh;
+  height: 90vh;
   display: flex;
 }
-#intro .content aside {
+#intro .intro aside {
   width: 50vw;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-#intro .content aside div {
-  width: 40%;
+#intro .intro aside div {
+  width: 50%;
   padding: 70px 15px;
   border: 5px white solid;
   border-radius: 80px;
   text-align: center;
 }
-#intro .content aside div h3 {
+#intro .intro aside div h3 {
+  margin: 65px 0px;
+}
+
+/* =============
+    Food
+============= */
+#food {
+  margin-top: -80px;
+}
+#food #orangeWave {
+  width: 100%;
+  margin-bottom: -15px;
+}
+#food .food {
+  background-color: #FFC3A4;
+  height: 90vh;
+  display: flex;
+}
+#food .food > div {
+  width: 50vw;
+}
+#food .food aside {
+  width: 50vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#food .food aside div {
+  width: 50%;
+  padding: 70px 15px;
+  border: 5px white solid;
+  border-radius: 80px;
+  text-align: center;
+}
+#food .food aside div h3 {
   margin: 65px 0px;
 }

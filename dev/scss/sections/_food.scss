@@ -1,16 +1,20 @@
 /* =============
-    Intro
+    Food
 ============= */
 
-#intro{
-    #tanWave{
+#food{
+    margin-top: -80px;
+    #orangeWave{
         width: 100%;
         margin-bottom: -15px;
     }
-    .intro{
-        background-color: #F9D5AE;
+    .food{
+        background-color: #FFC3A4;
         height: 90vh;
         display: flex;
+        >div{
+            width: 50vw;
+        }
         aside{
             width: 50vw;
             display: flex;
