@@ -1,0 +1,33 @@
+/* =============
+    Life
+============= */
+
+#life{
+    margin-top: -80px;
+    #purpleWave{
+        width: 100%;
+        margin-bottom: -15px;
+    }
+    .life{
+        background-color: #A6416E;
+        height: 90vh;
+        display: flex;
+        aside{
+            width: 50vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            div{
+                width: 50%;
+                padding: 70px 15px;
+                border: 5px white solid;
+                border-radius: 80px;
+                text-align: center;
+
+                h3{
+                    margin: 65px 0px;
+                }
+            }
+        }
+    }
+}

@@ -556,3 +556,67 @@ textarea {
 #shell .shell aside div h3 {
   margin: 65px 0px;
 }
+
+/* =============
+    Life
+============= */
+#life {
+  margin-top: -80px;
+}
+#life #purpleWave {
+  width: 100%;
+  margin-bottom: -15px;
+}
+#life .life {
+  background-color: #A6416E;
+  height: 90vh;
+  display: flex;
+}
+#life .life aside {
+  width: 50vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#life .life aside div {
+  width: 50%;
+  padding: 70px 15px;
+  border: 5px white solid;
+  border-radius: 80px;
+  text-align: center;
+}
+#life .life aside div h3 {
+  margin: 65px 0px;
+}
+
+/* =============
+    End
+============= */
+#end {
+  margin-top: -80px;
+}
+#end #darkPurpleWave {
+  width: 100%;
+  margin-bottom: -15px;
+}
+#end .end {
+  background-color: #2E1845;
+  height: 90vh;
+  display: flex;
+}
+#end .end aside {
+  width: 50vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#end .end aside div {
+  width: 50%;
+  padding: 70px 15px;
+  border: 5px white solid;
+  border-radius: 80px;
+  text-align: center;
+}
+#end .end aside div h3 {
+  margin: 65px 0px;
+}
