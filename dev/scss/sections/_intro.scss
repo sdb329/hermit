@@ -3,18 +3,30 @@
 ============= */
 
 #intro{
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
+    #tanWave{
+        width: 100%;
+        margin-bottom: -15px;
+    }
+    .content{
+        background-color: #F9D5AE;
+        height: 80vh;
+        display: flex;
+        aside{
+            width: 50vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            div{
+                width: 40%;
+                padding: 70px 15px;
+                border: 5px white solid;
+                border-radius: 80px;
+                text-align: center;
 
-    // >div{
-    //     position: absolute;
-    //     top: 0;
-    //     left: 0;
-    //     background-color: #F9D5AE;
-    //     h1{
-    //         text-align: center;
-    //         width: 100vw;
-    //     }
-    // }
+                h3{
+                    margin: 65px 0px;
+                }
+            }
+        }
+    }
 }

@@ -462,3 +462,28 @@ textarea {
 /* =============
     Intro
 ============= */
+#intro #tanWave {
+  width: 100%;
+  margin-bottom: -15px;
+}
+#intro .content {
+  background-color: #F9D5AE;
+  height: 80vh;
+  display: flex;
+}
+#intro .content aside {
+  width: 50vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#intro .content aside div {
+  width: 40%;
+  padding: 70px 15px;
+  border: 5px white solid;
+  border-radius: 80px;
+  text-align: center;
+}
+#intro .content aside div h3 {
+  margin: 65px 0px;
+}
