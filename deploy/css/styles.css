@@ -522,3 +522,37 @@ textarea {
 #food .food aside div h3 {
   margin: 65px 0px;
 }
+
+/* =============
+    Shell
+============= */
+#shell {
+  margin-top: -80px;
+}
+#shell #pinkWave {
+  width: 100%;
+  margin-bottom: -15px;
+}
+#shell .shell {
+  background-color: #C26B7A;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#shell .shell aside {
+  width: 50vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#shell .shell aside div {
+  width: 100%;
+  padding: 70px 15px;
+  border: 5px white solid;
+  border-radius: 80px;
+  text-align: center;
+}
+#shell .shell aside div h3 {
+  margin: 65px 0px;
+}
