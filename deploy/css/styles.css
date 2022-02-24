@@ -483,6 +483,7 @@ textarea {
   border: 5px white solid;
   border-radius: 80px;
   text-align: center;
+  color: #2E1845;
 }
 #intro .intro aside div h3 {
   margin: 65px 0px;
