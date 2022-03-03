@@ -453,9 +453,189 @@ textarea {
 /* =============
     Navigation
 ============= */
+#nav-container ul {
+  height: 100%;
+}
+@media (min-width: 992px) {
+  #nav-container ul {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+#nav-container ul li {
+  margin-bottom: 20px;
+  text-align: right;
+}
+@media (min-width: 992px) {
+  #nav-container ul li {
+    align-items: center;
+    display: flex;
+    margin-bottom: 0px;
+  }
+}
+#nav-container ul li a:link,
+#nav-container ul li a:visited {
+  color: black;
+  padding: 0px 0px;
+  text-decoration: none;
+  transition: 0.25s;
+}
+@media (min-width: 992px) {
+  #nav-container ul li a:link,
+#nav-container ul li a:visited {
+    color: black;
+  }
+}
+#nav-container ul li a:link:hover, #nav-container ul li a:link:active,
+#nav-container ul li a:visited:hover,
+#nav-container ul li a:visited:active {
+  color: red;
+}
+
 /* =============
     Header
 ============= */
+header {
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+header #navigation-header {
+  display: grid;
+  grid-template-areas: "survival burger" "nav nav";
+  grid-template-columns: 90% auto;
+  padding-left: 16px;
+  padding-top: 32px;
+}
+@media (min-width: 992px) {
+  header #navigation-header {
+    grid-template-areas: "survival nav";
+    grid-template-columns: 35% auto;
+    padding-right: 16px;
+  }
+}
+@media (min-width: 1200px) {
+  header #navigation-header {
+    grid-template-areas: "survival nav";
+    grid-template-columns: 40% auto;
+  }
+}
+header #navigation-header #logo-container {
+  grid-area: survival;
+}
+header #navigation-header #logo-container > a > svg {
+  width: 70px;
+}
+header #navigation-header #logo-container button {
+  background-color: transparent;
+  color: black;
+  display: inline-block;
+  font-size: 1.125rem;
+  padding: 10px 20px;
+  transition: 0.25s;
+}
+header #navigation-header #logo-container button:hover {
+  color: red;
+}
+header #navigation-header #burger-container {
+  grid-area: burger;
+}
+@media (min-width: 992px) {
+  header #navigation-header #burger-container {
+    display: none !important;
+  }
+}
+header #navigation-header #burger-container i {
+  color: blue;
+  cursor: pointer;
+  font-size: 3.125rem;
+}
+header #navigation-header #nav-container {
+  display: none;
+  grid-area: nav;
+  padding: 20px 10px 10px;
+}
+@media (min-width: 992px) {
+  header #navigation-header #nav-container {
+    display: block !important;
+  }
+}
+header #search-md-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 100px;
+}
+@media (min-width: 992px) {
+  header #search-md-flex {
+    padding-top: 100px;
+  }
+}
+header #search-flex {
+  display: flex;
+  justify-content: center;
+}
+header #search-flex #search-bar {
+  background-color: #fff;
+  border: 4px green solid;
+  border-radius: 40px;
+  margin: 10px;
+  width: 90%;
+}
+header #search-flex #search-bar > form {
+  padding: 5px;
+}
+header #search-flex #search-bar > form > i {
+  color: green;
+  font-size: 1.5rem;
+}
+header #search-flex #search-bar > form > input {
+  background-color: transparent;
+  border: none;
+  border-radius: 0px;
+  color: green;
+  font-size: 1.5rem;
+  font-variation-settings: "wght" 600;
+  font-weight: 300;
+}
+header #search-flex #search-bar > form > input::placeholder {
+  color: green;
+}
+header #search-flex #search-bar > form > input:-ms-input-placeholder {
+  color: green;
+}
+header #search-flex #search-bar > form > input::-ms-input-placeholder {
+  color: green;
+}
+header #header-button {
+  display: flex;
+  justify-content: center;
+}
+header #header-button > button {
+  border-radius: 0px;
+  flex-grow: 1;
+}
+@media (min-width: 768px) {
+  header #search-md-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  header #search-md-flex #header-button {
+    flex-grow: 0.2;
+    order: 1;
+    padding-left: 16px;
+  }
+  header #search-md-flex #header-button > button {
+    border-radius: 20px;
+    margin-bottom: 10px;
+  }
+  header #search-md-flex #search-flex {
+    flex-grow: 0.2;
+    order: 2;
+  }
+}
+
 /* =============
     Footer
 ============= */
