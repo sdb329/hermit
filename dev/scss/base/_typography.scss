@@ -7,9 +7,43 @@ h1,h2,h3,h4{
     font-family: Staatliches;
 }
 
+h2{
+    font-size: rem-calc(26);
+    @include md{
+        font-size: rem-calc(64);
+    }
+
+    @include lg{
+        font-size: rem-calc(72);
+    }
+}
+
+
+h3{
+
+    font-size: rem-calc(24);
+
+    @include md{
+        font-size: rem-calc(32);
+    }
+
+    @include lg{
+        font-size: rem-calc(48);
+    }
+}
+
 p{
     margin: 0;
     padding: 0;
+
+    font-size: rem-calc(16);
+    text-align: justify;
+
+    @include md{
+        font-size: rem-calc(24);
+    }
+
+   
 }
 
 #one{

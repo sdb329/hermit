@@ -389,9 +389,44 @@ h1, h2, h3, h4 {
   font-family: Staatliches;
 }
 
+h2 {
+  font-size: 1.625rem;
+}
+@media (min-width: 768px) {
+  h2 {
+    font-size: 4rem;
+  }
+}
+@media (min-width: 992px) {
+  h2 {
+    font-size: 4.5rem;
+  }
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+@media (min-width: 768px) {
+  h3 {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 992px) {
+  h3 {
+    font-size: 3rem;
+  }
+}
+
 p {
   margin: 0;
   padding: 0;
+  font-size: 1rem;
+  text-align: justify;
+}
+@media (min-width: 768px) {
+  p {
+    font-size: 1.5rem;
+  }
 }
 
 #one {
@@ -432,6 +467,12 @@ p {
 /* =============
     Buttons
 ============= */
+@media (min-width: 1200px) {
+  body .format {
+    margin: -13vh;
+  }
+}
+
 /* =============
     Forms
 ============= */
@@ -459,7 +500,7 @@ textarea {
 @media (min-width: 992px) {
   #nav-container ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 }
 #nav-container ul li {
@@ -496,143 +537,64 @@ textarea {
     Header
 ============= */
 header {
+  background-color: #722B4A;
   left: 0;
   top: 0;
   width: 100%;
 }
-header #navigation-header {
+@media (min-width: 1200px) {
+  header #navigation-contain {
+    display: grid;
+    grid-template-areas: ". contain .";
+    grid-template-columns: auto 1200px auto;
+  }
+}
+header #navigation-contain #navigation-header {
+  grid-area: contain;
   display: grid;
-  grid-template-areas: "survival burger" "nav nav";
-  grid-template-columns: 90% auto;
+  grid-template-areas: "survival search burger" ". nav nav";
+  grid-template-columns: 20% 60% 20% auto auto auto;
   padding-left: 16px;
-  padding-top: 32px;
 }
 @media (min-width: 992px) {
-  header #navigation-header {
-    grid-template-areas: "survival nav";
-    grid-template-columns: 35% auto;
+  header #navigation-contain #navigation-header {
+    grid-template-areas: "survival nav search";
+    grid-template-columns: 10% auto 10%;
     padding-right: 16px;
   }
 }
-@media (min-width: 1200px) {
-  header #navigation-header {
-    grid-template-areas: "survival nav";
-    grid-template-columns: 40% auto;
-  }
-}
-header #navigation-header #logo-container {
+header #navigation-contain #navigation-header #logo-container {
   grid-area: survival;
 }
-header #navigation-header #logo-container > a > svg {
-  width: 70px;
+header #navigation-contain #navigation-header #search-icon-flex {
+  display: flex;
+  justify-content: center;
 }
-header #navigation-header #logo-container button {
-  background-color: transparent;
-  color: black;
-  display: inline-block;
-  font-size: 1.125rem;
-  padding: 10px 20px;
-  transition: 0.25s;
+header #navigation-contain #navigation-header #search-icon-flex #search-icon-full {
+  grid-area: search;
+  width: 250px;
 }
-header #navigation-header #logo-container button:hover {
-  color: red;
-}
-header #navigation-header #burger-container {
+header #navigation-contain #navigation-header #burger-container {
   grid-area: burger;
 }
 @media (min-width: 992px) {
-  header #navigation-header #burger-container {
+  header #navigation-contain #navigation-header #burger-container {
     display: none !important;
   }
 }
-header #navigation-header #burger-container i {
+header #navigation-contain #navigation-header #burger-container i {
   color: blue;
   cursor: pointer;
   font-size: 3.125rem;
 }
-header #navigation-header #nav-container {
+header #navigation-contain #navigation-header #nav-container {
   display: none;
   grid-area: nav;
   padding: 20px 10px 10px;
 }
 @media (min-width: 992px) {
-  header #navigation-header #nav-container {
+  header #navigation-contain #navigation-header #nav-container {
     display: block !important;
-  }
-}
-header #search-md-flex {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-top: 100px;
-}
-@media (min-width: 992px) {
-  header #search-md-flex {
-    padding-top: 100px;
-  }
-}
-header #search-flex {
-  display: flex;
-  justify-content: center;
-}
-header #search-flex #search-bar {
-  background-color: #fff;
-  border: 4px green solid;
-  border-radius: 40px;
-  margin: 10px;
-  width: 90%;
-}
-header #search-flex #search-bar > form {
-  padding: 5px;
-}
-header #search-flex #search-bar > form > i {
-  color: green;
-  font-size: 1.5rem;
-}
-header #search-flex #search-bar > form > input {
-  background-color: transparent;
-  border: none;
-  border-radius: 0px;
-  color: green;
-  font-size: 1.5rem;
-  font-variation-settings: "wght" 600;
-  font-weight: 300;
-}
-header #search-flex #search-bar > form > input::placeholder {
-  color: green;
-}
-header #search-flex #search-bar > form > input:-ms-input-placeholder {
-  color: green;
-}
-header #search-flex #search-bar > form > input::-ms-input-placeholder {
-  color: green;
-}
-header #header-button {
-  display: flex;
-  justify-content: center;
-}
-header #header-button > button {
-  border-radius: 0px;
-  flex-grow: 1;
-}
-@media (min-width: 768px) {
-  header #search-md-flex {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  header #search-md-flex #header-button {
-    flex-grow: 0.2;
-    order: 1;
-    padding-left: 16px;
-  }
-  header #search-md-flex #header-button > button {
-    border-radius: 20px;
-    margin-bottom: 10px;
-  }
-  header #search-md-flex #search-flex {
-    flex-grow: 0.2;
-    order: 2;
   }
 }
 
@@ -713,29 +675,100 @@ header #header-button > button {
 #shell #pinkWave {
   width: 100%;
   margin-bottom: -15px;
+  z-index: 2;
 }
 #shell .shell {
   background-color: #C26B7A;
-  height: 90vh;
+  padding: 7vh 16px 14vh 16px;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 69vh;
 }
-#shell .shell aside {
-  width: 50vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+@media (min-width: 1200px) {
+  #shell .shell {
+    padding: 7vh 16px 30vh 16px;
+  }
 }
-#shell .shell aside div {
-  width: 100%;
-  padding: 70px 15px;
+@media (min-width: 1200px) {
+  #shell .shell {
+    display: grid;
+    grid-template-areas: ". contain .";
+    grid-template-columns: auto 1200px auto;
+  }
+}
+#shell .shell > ul {
   border: 5px white solid;
   border-radius: 80px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-#shell .shell aside div h3 {
-  margin: 65px 0px;
+@media (min-width: 1200px) {
+  #shell .shell > ul {
+    grid-area: contain;
+    padding: 100px 0px;
+  }
+}
+#shell .shell > ul #shell-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#shell .shell > ul #shell-svgs {
+  display: grid;
+  grid-template-areas: "shell";
+  grid-template-columns: auto;
+  padding-top: 10vh;
+}
+#shell .shell > ul #shell-svgs > div > svg {
+  width: 300px;
+}
+@media (min-width: 768px) {
+  #shell .shell > ul #shell-svgs > div > svg {
+    width: 200px;
+  }
+}
+@media (min-width: 992px) {
+  #shell .shell > ul #shell-svgs > div > svg {
+    width: 300px;
+  }
+}
+#shell .shell > ul #shell-svgs #crab-body {
+  grid-area: shell;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+}
+#shell .shell > ul #shell-svgs #shells {
+  grid-area: shell;
+  z-index: 1;
+  margin-top: -15vh;
+  display: flex;
+}
+#shell .shell > ul #shell-svgs #shells #shell1 {
+  display: none;
+}
+@media (min-width: 768px) {
+  #shell .shell > ul #shell-svgs #shells #shell1 {
+    display: list-item;
+  }
+}
+#shell .shell > ul #shell-svgs #shells #shell3 {
+  display: none;
+}
+@media (min-width: 768px) {
+  #shell .shell > ul #shell-svgs #shells #shell3 {
+    display: list-item;
+  }
+}
+#shell .shell > ul #shell-p > p {
+  padding: 0px 16px;
+}
+@media (min-width: 768px) {
+  #shell .shell > ul #shell-p > p {
+    padding: 0px 32px;
+  }
 }
 
 /* =============
