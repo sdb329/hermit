@@ -3,11 +3,65 @@
 ============= */
 
 header {
+
+
+
+
+
 	background-color: #722B4A;
 	left: 0;
 	// position: fixed;
 	top: 0;
 	width: 100%;
+	position: fixed;
+	z-index: 10;
+
+	#circle-cover{
+		position: fixed;
+		
+		width: 110vw;
+		height: 100vh;
+		// width: 100px;
+
+		overflow-x: hidden;
+		overflow-y: hidden;
+		z-index: 1;
+
+		
+	
+
+		#circle-svg{
+
+			position:fixed;
+			top:0;
+			right:0;
+			width: 100%;
+
+			// left:24px;
+
+		}
+
+
+		#circle-svg2{
+
+			position:fixed;
+			top:0;
+			right:0;
+			width: 100%;
+
+			// left:24px;
+
+		}
+
+	
+	}
+
+	section{
+
+		// left: 0;
+		// // position: fixed;
+		// top: 0;
+		// width: 100%;
 
 	#navigation-contain{
 		@include xl{
@@ -22,14 +76,17 @@ header {
 
 	
 	#navigation-header {
+		@include xl{
+			grid-area: contain;
 
-		grid-area: contain;
+		}
+
+		
 		display: grid;
 		grid-template-areas: "survival search burger"
-            ". nav nav";
-		grid-template-columns: 20% 60% 20%
-		auto auto auto;
-		padding-left: 16px;
+            "nav nav nav";
+		grid-template-columns: 20% 60% 20%;
+		// padding-left: 16px;
 		// padding-top: 32px;
 		@include lg {
 			grid-template-areas: "survival nav search";
@@ -42,12 +99,7 @@ header {
 		#logo-container {
 			grid-area: survival;
 
-			>a{
-				>svg{
-					// width: 70px;
-				}
-			}
-			
+		
 		}
 
 		#search-icon-flex{
@@ -69,6 +121,7 @@ header {
       
 		#burger-container {
 			grid-area: burger;
+			z-index: 4;
 			@include lg {
 				display: none !important;
 			}
@@ -80,15 +133,26 @@ header {
 		}
 		#nav-container {
 			// background-color: $darkblue;
-			display: none;
+			// display: none;
+			z-index: 3;
+			position: fixed;
+			width: 100vw;
+			height: 100vh;
 			grid-area: nav;
 			padding: 20px 10px 10px;
+
+			
+
 			@include lg {
 				// background-color: $darkblue;
 				display: block !important;
+				position: static;
+				height: 32px;
+				width: 20vw;
 			}
 		}
 	}
 
 }
+	}
 }

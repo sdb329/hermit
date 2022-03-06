@@ -467,12 +467,6 @@ p {
 /* =============
     Buttons
 ============= */
-@media (min-width: 1200px) {
-  body .format {
-    margin: -13vh;
-  }
-}
-
 /* =============
     Forms
 ============= */
@@ -496,16 +490,35 @@ textarea {
 ============= */
 #nav-container ul {
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.125rem;
 }
 @media (min-width: 992px) {
   #nav-container ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-start;
+    font-size: 1.25rem;
+    width: 60vw;
   }
 }
 #nav-container ul li {
   margin-bottom: 20px;
   text-align: right;
+  padding: 10px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  #nav-container ul li {
+    padding: 30px 0px;
+  }
 }
 @media (min-width: 992px) {
   #nav-container ul li {
@@ -516,21 +529,33 @@ textarea {
 }
 #nav-container ul li a:link,
 #nav-container ul li a:visited {
-  color: black;
+  color: #fff;
   padding: 0px 0px;
   text-decoration: none;
   transition: 0.25s;
+  width: 100vw;
+  text-align: center;
 }
 @media (min-width: 992px) {
   #nav-container ul li a:link,
 #nav-container ul li a:visited {
-    color: black;
+    color: #fff;
+    width: 10vw;
   }
 }
 #nav-container ul li a:link:hover, #nav-container ul li a:link:active,
 #nav-container ul li a:visited:hover,
 #nav-container ul li a:visited:active {
   color: red;
+  padding: 20px 0px;
+}
+@media (min-width: 992px) {
+  #nav-container ul li a:link:hover, #nav-container ul li a:link:active,
+#nav-container ul li a:visited:hover,
+#nav-container ul li a:visited:active {
+    padding: 0px;
+    font-size: 1.375rem;
+  }
 }
 
 /* =============
@@ -541,60 +566,92 @@ header {
   left: 0;
   top: 0;
   width: 100%;
+  position: fixed;
+  z-index: 10;
+}
+header #circle-cover {
+  position: fixed;
+  width: 110vw;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  z-index: 1;
+}
+header #circle-cover #circle-svg {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+}
+header #circle-cover #circle-svg2 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
 }
 @media (min-width: 1200px) {
-  header #navigation-contain {
+  header section #navigation-contain {
     display: grid;
     grid-template-areas: ". contain .";
     grid-template-columns: auto 1200px auto;
   }
 }
-header #navigation-contain #navigation-header {
-  grid-area: contain;
+header section #navigation-contain #navigation-header {
   display: grid;
-  grid-template-areas: "survival search burger" ". nav nav";
-  grid-template-columns: 20% 60% 20% auto auto auto;
-  padding-left: 16px;
+  grid-template-areas: "survival search burger" "nav nav nav";
+  grid-template-columns: 20% 60% 20%;
+}
+@media (min-width: 1200px) {
+  header section #navigation-contain #navigation-header {
+    grid-area: contain;
+  }
 }
 @media (min-width: 992px) {
-  header #navigation-contain #navigation-header {
+  header section #navigation-contain #navigation-header {
     grid-template-areas: "survival nav search";
     grid-template-columns: 10% auto 10%;
     padding-right: 16px;
   }
 }
-header #navigation-contain #navigation-header #logo-container {
+header section #navigation-contain #navigation-header #logo-container {
   grid-area: survival;
 }
-header #navigation-contain #navigation-header #search-icon-flex {
+header section #navigation-contain #navigation-header #search-icon-flex {
   display: flex;
   justify-content: center;
 }
-header #navigation-contain #navigation-header #search-icon-flex #search-icon-full {
+header section #navigation-contain #navigation-header #search-icon-flex #search-icon-full {
   grid-area: search;
   width: 250px;
 }
-header #navigation-contain #navigation-header #burger-container {
+header section #navigation-contain #navigation-header #burger-container {
   grid-area: burger;
+  z-index: 4;
 }
 @media (min-width: 992px) {
-  header #navigation-contain #navigation-header #burger-container {
+  header section #navigation-contain #navigation-header #burger-container {
     display: none !important;
   }
 }
-header #navigation-contain #navigation-header #burger-container i {
+header section #navigation-contain #navigation-header #burger-container i {
   color: blue;
   cursor: pointer;
   font-size: 3.125rem;
 }
-header #navigation-contain #navigation-header #nav-container {
-  display: none;
+header section #navigation-contain #navigation-header #nav-container {
+  z-index: 3;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
   grid-area: nav;
   padding: 20px 10px 10px;
 }
 @media (min-width: 992px) {
-  header #navigation-contain #navigation-header #nav-container {
+  header section #navigation-contain #navigation-header #nav-container {
     display: block !important;
+    position: static;
+    height: 32px;
+    width: 20vw;
   }
 }
 
