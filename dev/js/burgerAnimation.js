@@ -7,8 +7,8 @@ gsap.set("#burger",{transformOrigin:"center"});
 gsap.set("#bottom1",{drawSVG: "0% 48%"});
 // gsap.set("#circle-svg",{scale: .2, transformOrigin:"right center", y: "-=400", x: ""});
 // gsap.set("#circle-svg",{scale: 1, y: "-=30", x: "+=30"});
-gsap.set("#circle-svg",{y: "-=150vh", scale: 4});
-gsap.set("#circle-svg2",{y: "-=150vh", scale: 4});
+gsap.set("#circle-svg",{y: "-=170vh", scale: 4});
+gsap.set("#circle-svg2",{y: "-=170vh", scale: 4});
 gsap.set("#circle-top",{y: "-=100vh"});
     
 

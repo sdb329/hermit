@@ -533,7 +533,8 @@ textarea {
   padding: 0px 0px;
   text-decoration: none;
   transition: 0.25s;
-  width: 100vw;
+  width: 40vw;
+  border-radius: 100px;
   text-align: center;
 }
 @media (min-width: 992px) {
