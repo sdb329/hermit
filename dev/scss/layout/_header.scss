@@ -53,6 +53,18 @@ header {
 
 		}
 
+		#circle-svg3{
+
+			position:fixed;
+			top:0;
+			right:0;
+			width: 100%;
+
+			// left:24px;
+
+		}
+
+
 	
 	}
 
@@ -64,22 +76,24 @@ header {
 		// width: 100%;
 
 	#navigation-contain{
-		@include xl{
+		// @include xl{
 
-			display: grid;
-		grid-template-areas: ". contain .";
-		grid-template-columns: auto 1200px auto;
+		// 	display: grid;
+		// grid-template-areas: ". contain .";
+		// grid-template-columns: auto 1200px auto;
 
 
-		}
+		// }
+
+
 
 
 	
 	#navigation-header {
-		@include xl{
-			grid-area: contain;
+		// @include xl{
+		// 	grid-area: contain;
 
-		}
+		// }
 
 		
 		display: grid;
@@ -99,6 +113,13 @@ header {
 		#logo-container {
 			grid-area: survival;
 
+			
+
+			@include xl{
+				width: 100px;
+				padding-left: 4vw;
+			}
+
 		
 		}
 
@@ -110,6 +131,14 @@ header {
 
 				grid-area: search;
 				width: 250px;
+
+
+
+				@include xl{
+					width: 200px;
+
+					// justify-content: flex-end;
+				}
 				
 			}
 			
@@ -122,6 +151,7 @@ header {
 		#burger-container {
 			grid-area: burger;
 			z-index: 4;
+			// width: 20px;
 			@include lg {
 				display: none !important;
 			}
@@ -140,8 +170,12 @@ header {
 			height: 100vh;
 			grid-area: nav;
 			padding: 20px 10px 10px;
+			// display: grid;
+			// justify-content: center;
+			// align-items: center;
+				
 
-			
+		
 
 			@include lg {
 				// background-color: $darkblue;
@@ -150,6 +184,8 @@ header {
 				height: 32px;
 				width: 20vw;
 			}
+
+			
 		}
 	}
 

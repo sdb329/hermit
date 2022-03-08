@@ -467,6 +467,12 @@ p {
 /* =============
     Buttons
 ============= */
+button {
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+}
+
 /* =============
     Forms
 ============= */
@@ -499,11 +505,11 @@ textarea {
 @media (min-width: 992px) {
   #nav-container ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: row;
     align-items: flex-start;
     font-size: 1.25rem;
-    width: 60vw;
+    width: 80vw;
   }
 }
 #nav-container ul li {
@@ -527,8 +533,7 @@ textarea {
     margin-bottom: 0px;
   }
 }
-#nav-container ul li a:link,
-#nav-container ul li a:visited {
+#nav-container ul li .nav-btns {
   color: #fff;
   padding: 0px 0px;
   text-decoration: none;
@@ -538,22 +543,15 @@ textarea {
   text-align: center;
 }
 @media (min-width: 992px) {
-  #nav-container ul li a:link,
-#nav-container ul li a:visited {
-    color: #fff;
+  #nav-container ul li .nav-btns {
     width: 10vw;
   }
 }
-#nav-container ul li a:link:hover, #nav-container ul li a:link:active,
-#nav-container ul li a:visited:hover,
-#nav-container ul li a:visited:active {
-  color: red;
+#nav-container ul li .nav-btns:hover {
   padding: 20px 0px;
 }
 @media (min-width: 992px) {
-  #nav-container ul li a:link:hover, #nav-container ul li a:link:active,
-#nav-container ul li a:visited:hover,
-#nav-container ul li a:visited:active {
+  #nav-container ul li .nav-btns:hover {
     padding: 0px;
     font-size: 1.375rem;
   }
@@ -590,22 +588,16 @@ header #circle-cover #circle-svg2 {
   right: 0;
   width: 100%;
 }
-@media (min-width: 1200px) {
-  header section #navigation-contain {
-    display: grid;
-    grid-template-areas: ". contain .";
-    grid-template-columns: auto 1200px auto;
-  }
+header #circle-cover #circle-svg3 {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
 }
 header section #navigation-contain #navigation-header {
   display: grid;
   grid-template-areas: "survival search burger" "nav nav nav";
   grid-template-columns: 20% 60% 20%;
-}
-@media (min-width: 1200px) {
-  header section #navigation-contain #navigation-header {
-    grid-area: contain;
-  }
 }
 @media (min-width: 992px) {
   header section #navigation-contain #navigation-header {
@@ -617,6 +609,12 @@ header section #navigation-contain #navigation-header {
 header section #navigation-contain #navigation-header #logo-container {
   grid-area: survival;
 }
+@media (min-width: 1200px) {
+  header section #navigation-contain #navigation-header #logo-container {
+    width: 100px;
+    padding-left: 4vw;
+  }
+}
 header section #navigation-contain #navigation-header #search-icon-flex {
   display: flex;
   justify-content: center;
@@ -624,6 +622,11 @@ header section #navigation-contain #navigation-header #search-icon-flex {
 header section #navigation-contain #navigation-header #search-icon-flex #search-icon-full {
   grid-area: search;
   width: 250px;
+}
+@media (min-width: 1200px) {
+  header section #navigation-contain #navigation-header #search-icon-flex #search-icon-full {
+    width: 200px;
+  }
 }
 header section #navigation-contain #navigation-header #burger-container {
   grid-area: burger;

@@ -4,7 +4,7 @@
 
 // import { scrollAnimation, scrollAnimation2, scrollAnimationButton1 } from "./scrollAnimation"
 
-import { burgerTL, burgerJumpTL, circleTL} from "./burgerAnimation"
+import { burgerTL, circleTL} from "./burgerAnimation"
 
 import { displayWindowSize} from "./mobileResizing"
 
@@ -16,6 +16,7 @@ import { arrowJumpTL} from "./arrow-anim"
 
 import { sectionListners } from "./sectionMain"
 
+import { scrollPage } from "./pageScroll"
 
 
 
@@ -31,7 +32,7 @@ function openCloseMenu(){
     if(canISeeMenu === false) {
         burgerTL.play();
         circleTL.play();
-        burgerJumpTL.play();
+
 
         menuAnimation.play();
         screenLocker();
@@ -39,8 +40,9 @@ function openCloseMenu(){
         
     }else{
         burgerTL.reverse();
+        // circleTL2.play();
         circleTL.reverse();
-        burgerJumpTL.pause();
+    
         menuAnimation.reverse();
         screenLocker();
         canISeeMenu = false;
@@ -63,6 +65,18 @@ console.log(navButtons);
 
 for (const button of navButtons){
     button.addEventListener("click", openCloseMenu)
+    button.addEventListener("click", checkScrolling);
+}
+
+function checkScrolling(e) {
+
+
+    const indexValue = [].indexOf.call(navButtons, e.target);
+    e.stopPropagation();
+    e.preventDefault();
+    if (indexValue != -1) {
+        scrollPage(indexValue - 1);
+    }
 }
 
 // for(let i = 0; i < navButtons.length; i++){

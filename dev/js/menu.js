@@ -30,7 +30,7 @@ export function menuListners (){
                 })
        
                 link.addEventListener("mouseleave", ()=>{
-                    gsap.to(navButtonsAnimate[i],{duration:.03, scale: 1, stagger:.3, background: "transparent", color: '#112E3E'})
+                    gsap.to(navButtonsAnimate[i],{duration:.03, scale: 1, stagger:.3, background: "transparent"})
              
                 })
 
@@ -47,7 +47,7 @@ export function menuListners (){
                 })
         
                 link.addEventListener("mouseleave", ()=>{
-                    gsap.to(navButtonsAnimate[i],{duration:.03, scale: 1, stagger:.3, background: "transparent", color: '#112E3E'})
+                    gsap.to(navButtonsAnimate[i],{duration:.03, scale: 1, stagger:.3, color: '#fff', background: "transparent"})
 
 
                 })

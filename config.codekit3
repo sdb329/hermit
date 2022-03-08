@@ -40,6 +40,16 @@
       "sC" : 3,
       "tS" : 0
     },
+    "\/design\/burger.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/design\/burger.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/design\/circle-nav.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -105,6 +115,16 @@
       "miP" : 0,
       "oA" : 2,
       "oAP" : "\/design\/circle-svg4.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/design\/click-me-circle-nobackground.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/design\/click-me-circle-nobackground.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
@@ -389,6 +409,17 @@
       "mi" : 1,
       "oA" : 1,
       "oAP" : "\/dev\/js\/mobileResizing-min.js",
+      "oF" : 0,
+      "sC" : 3,
+      "tS" : 0
+    },
+    "\/dev\/js\/pageScroll.js" : {
+      "bF" : 0,
+      "ft" : 64,
+      "ma" : 0,
+      "mi" : 1,
+      "oA" : 1,
+      "oAP" : "\/dev\/js\/pageScroll-min.js",
       "oF" : 0,
       "sC" : 3,
       "tS" : 0
