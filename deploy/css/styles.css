@@ -576,23 +576,46 @@ header #circle-cover {
   overflow-y: hidden;
   z-index: 1;
 }
+@media (min-width: 992px) {
+  header #circle-cover {
+    display: none;
+  }
+}
 header #circle-cover #circle-svg {
   position: fixed;
   top: 0;
   right: 0;
   width: 100%;
+  z-index: 1;
+}
+@media (min-width: 992px) {
+  header #circle-cover #circle-svg {
+    display: none;
+  }
 }
 header #circle-cover #circle-svg2 {
   position: fixed;
   top: 0;
   right: 0;
   width: 100%;
+  z-index: 1;
+}
+@media (min-width: 992px) {
+  header #circle-cover #circle-svg2 {
+    display: none;
+  }
 }
 header #circle-cover #circle-svg3 {
   position: fixed;
   top: 0;
   right: 0;
   width: 100%;
+  z-index: 1;
+}
+@media (min-width: 992px) {
+  header #circle-cover #circle-svg3 {
+    display: none;
+  }
 }
 header section #navigation-contain #navigation-header {
   display: grid;
@@ -602,31 +625,78 @@ header section #navigation-contain #navigation-header {
 @media (min-width: 992px) {
   header section #navigation-contain #navigation-header {
     grid-template-areas: "survival nav search";
-    grid-template-columns: 10% auto 10%;
+    grid-template-columns: 20% auto 10%;
     padding-right: 16px;
   }
 }
 header section #navigation-contain #navigation-header #logo-container {
   grid-area: survival;
 }
-@media (min-width: 1200px) {
-  header section #navigation-contain #navigation-header #logo-container {
-    width: 100px;
-    padding-left: 4vw;
-  }
+header section #navigation-contain #navigation-header #logo-container > button {
+  z-index: 500;
+  transition: 0.25s;
 }
-header section #navigation-contain #navigation-header #search-icon-flex {
-  display: flex;
-  justify-content: center;
+header section #navigation-contain #navigation-header #logo-container > button > svg {
+  width: 100px;
 }
-header section #navigation-contain #navigation-header #search-icon-flex #search-icon-full {
+header section #navigation-contain #navigation-header #logo-container > button > svg:hover {
+  width: 200px;
+}
+header section #navigation-contain #navigation-header .theme-switch-wrapper {
   grid-area: search;
-  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: column;
+  width: 100%;
 }
-@media (min-width: 1200px) {
-  header section #navigation-contain #navigation-header #search-icon-flex #search-icon-full {
-    width: 200px;
-  }
+header section #navigation-contain #navigation-header .theme-switch-wrapper #light-dark-text {
+  margin-left: 10px;
+  font-size: 1rem;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+}
+header section #navigation-contain #navigation-header .theme-switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+}
+header section #navigation-contain #navigation-header .theme-switch input {
+  display: none;
+}
+header section #navigation-contain #navigation-header .slider {
+  background-color: var(--darkpurple);
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: 0.4s;
+}
+header section #navigation-contain #navigation-header .slider:before {
+  background-color: var(--white);
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: 0.4s;
+  width: 26px;
+}
+header section #navigation-contain #navigation-header input:checked + .slider {
+  background-color: var(--white);
+}
+header section #navigation-contain #navigation-header input:checked + .slider:before {
+  transform: translateX(26px);
+  background-color: var(--darkpurple);
+}
+header section #navigation-contain #navigation-header .slider.round {
+  border-radius: 34px;
+}
+header section #navigation-contain #navigation-header .slider.round:before {
+  border-radius: 50%;
 }
 header section #navigation-contain #navigation-header #burger-container {
   grid-area: burger;
